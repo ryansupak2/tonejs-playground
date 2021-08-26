@@ -1,0 +1,76 @@
+body
+{
+	font-family:  monospace;
+	color: #ffffff;
+	background-color: #000000;
+
+}
+
+button 
+{
+	font-family: monospace;
+	color: #00FF00;
+	outline-color: #FFFFFF;
+	background-color: #000000;
+}
+
+#Section_Globals
+{
+	outline-color: #FFFFFF;
+	outline-style: solid;
+	outline-width: 1px;
+	padding: 12px;
+	margin: 12px;
+	white-space: pre;
+}
+
+#Section_Status
+{
+	outline-color: #00FF00;
+	outline-style: solid;
+	outline-width: 1px;
+	padding: 4px;
+	margin: 4px;
+	white-space: default;
+}
+
+#Status_Label
+{
+
+	color: #00FF00;
+}
+
+
+#Section_Title
+{
+	font-family: monospace;
+	font-size: xx-large;
+	color: #FFFFFF;
+}
+
+#QuartetAsciiLogo
+{
+	white-space: pre;
+}
+
+#Global_Status
+{
+	position: absolute;
+	top:  12px;
+	right: 12px;
+		outline-color: #FFFFFF;
+	outline-style: solid;
+	outline-width: 1px;
+	padding: 12px;
+	margin: 12px;
+}
+
+#circle
+{
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #00FF00;
+}
