@@ -1,118 +1,114 @@
 <html>
 	<head>
-		<title>mainpage | quartet</title>
+		<title>mainpage | quartet.livecoding</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+
 		<script src="js/tone/Tone.js" type="text/javascript"></script>
 		<script src="js/main.js" type="text/javascript"></script>
+
 		<link rel="stylesheet" href="css/main.css" /> 
 	</head>
 	<body>
-
 <div id="QuartetAsciiLogo">
-		          __       __     ___                           ___                
-  ____ ___  ______ ______/ /____  / /_   / (_)   _____  _________  ____/ (_)___  ____ _    
- / __ `/ / / / __ `/ ___/ __/ _ \/ __/  / / / | / / _ \/ ___/ __ \/ __  / / __ \/ __ `/    
-/ /_/ / /_/ / /_/ / /  / /_/  __/ /_   / / /| |/ /  __/ /__/ /_/ / /_/ / / / / / /_/ /     
-\__, /\__,_/\__,_/_/   \__/\___/\__/  /_/_/ |___/\___/\___/\____/\__,_/_/_/ /_/\__, /      
-  /_/                                                                         /____/     
+   ____                   __       __     __    _                           ___            
+  / __ \__  ______ ______/ /____  / /_   / /   (_)   _____  _________  ____/ (_)___  ____ _
+ / / / / / / / __ `/ ___/ __/ _ \/ __/  / /   / / | / / _ \/ ___/ __ \/ __  / / __ \/ __ `/
+/ /_/ / /_/ / /_/ / /  / /_/  __/ /_   / /___/ /| |/ /  __/ /__/ /_/ / /_/ / / / / / /_/ / 
+\___\_\__,_/\__,_/_/   \__/\___/\__/  /_____/_/ |___/\___/\___/\____/\__,_/_/_/ /_/\__, /  
+                                                                                  /____/   
 
 </div>
 
-<div id="Global_Status">
-	<button>G</button><br>
-	<button>1</button>[....:....]<br>
-	<button>2</button>[....:....]<br>
-	<button>3</button>[....:....]<br>
-	<button>4</button>[....:....]<br>
-	<button>M</button>[....:....]
+<div class="MainPageTopSection">
+	<div id="MainEngine_Container">
+
+			<div id="MainEngine_StatusLabel">
+				<b><u>Main Audio Engine Off</u></b>
+			</div>
+
+			<div id="MainEngine_Switch">
+					<!-- Rounded switch -->
+					<label class="switch">
+					  <input type="checkbox">
+					  <span class="slider round"></span>
+					</label>
+			</div>
+
+	</div>
+
+	<div class="MainPageSection">
+		<details>
+			<summary>Console</summary>
+			more stuff!
+		</details>
+	</div>
+
+<div class="MainPageSuperSection">
+	<div class="MainPageSection">
+
+
+			<details>
+			<summary>Globals</summary>
+			more stuff!
+		</details>
+
+
+<div id="SectionToggle_Container">
+	<div id="SectionToggle_SubContainer">
+<!--
+			<div id="MainEngine_StatusLabel">
+				<b><u>Not Active</u></b>
+			</div>
+		-->	
+			<div id="MainEngine_Switch">
+					<!-- Rounded switch -->
+					<label class="switch">
+					  <input type="checkbox">
+					  <span class="slider round"></span>
+					</label>
+			</div>
+
+	</div>
 </div>
 
-		<br>
-		
-		<button onclick="StartAudioEngine(event)">Start Audio Engine</button>
-		<button onclick="PlayAudio(event)">Play Audio</button>	
-		<br>
-		<br>
-<div id="Section_Globals">
-<span id="Section_Title"><u>Globals</u></span>
-<div id="Section_Status"><span id="Status_Label">running OK!</span>
-</div>
-total data size ......................  17 KB
-total external reference files .......  (3x)
-	akaisynth.js .................. 5 KB 
-	hotstepper.js ................. 17 KB 
-	physicswave.js ................ 20 KB
-	<br>
-</div>
-<br>
 
-<div id="Section_Globals">
-<div id="Section_Globals">
-<span id="Section_Title"><u>1</u></span>
-<div id="Section_Status"><span id="Status_Label">running OK!</span>
+	</div>
+
+	<div class="MainPageSection">
+		001
+	</div>
+
+	<div class="MainPageSection">
+		002
+	</div>
+
+	<div class="MainPageSection">
+		003
+	</div>
+
+	<div class="MainPageSection">
+		004
+	</div>
+
+	<div class="MainPageSection">
+		Master Out
+	</div>
 </div>
-total data size ......................  17 KB
-total external reference files .......  (3x)
-	akaisynth.js .................. 5 KB 
-	hotstepper.js ................. 17 KB 
-	physicswave.js ................ 20 KB
-	<br>
-</div>
-<div id="Section_Globals">
-<span id="Section_Title"><u>2</u></span>
-<div id="Section_Status"><span id="Status_Label">running OK!</span>
-</div>
-total data size ......................  17 KB
-total external reference files .......  (3x)
-	akaisynth.js .................. 5 KB 
-	hotstepper.js ................. 17 KB 
-	physicswave.js ................ 20 KB
-	<br>
-</div>
-<div id="Section_Globals">
-<span id="Section_Title"><u>3</u></span>
-<div id="Section_Status"><span id="Status_Label">running OK!</span>
-</div>
-total data size ......................  17 KB
-total external reference files .......  (3x)
-	akaisynth.js .................. 5 KB 
-	hotstepper.js ................. 17 KB 
-	physicswave.js ................ 20 KB
-	<br>
-</div>
-<div id="Section_Globals">
-<span id="Section_Title"><u>4</u></span>
-<div id="Section_Status"><span id="Status_Label">running OK!</span>
-</div>
-total data size ......................  17 KB
-total external reference files .......  (3x)
-	akaisynth.js .................. 5 KB 
-	hotstepper.js ................. 17 KB 
-	physicswave.js ................ 20 KB
-	<br>
-</div>
-</div>
-<br>
-<div id="Section_Globals">
-<span id="Section_Title"><u>Master Output</u></span>
-<div id="Section_Status"><span id="Status_Label">running OK!</span>
-</div>
-total data size ......................  17 KB
-total external reference files .......  (3x)
-	akaisynth.js .................. 5 KB 
-	hotstepper.js ................. 17 KB 
-	physicswave.js ................ 20 KB
-	<br>
 </div>
 
-<div id="QuartetAsciiLogo">
-		          __       __     ___                           ___                
-  ____ ___  ______ ______/ /____  / /_   / (_)   _____  _________  ____/ (_)___  ____ _    
- / __ `/ / / / __ `/ ___/ __/ _ \/ __/  / / / | / / _ \/ ___/ __ \/ __  / / __ \/ __ `/    
-/ /_/ / /_/ / /_/ / /  / /_/  __/ /_   / / /| |/ /  __/ /__/ /_/ / /_/ / / / / / /_/ /     
-\__, /\__,_/\__,_/_/   \__/\___/\__/  /_/_/ |___/\___/\___/\____/\__,_/_/_/ /_/\__, /      
-  /_/ v0.1 by ryansupak                                                       /____/     
-
+  <div id="QuartetAsciiLogo" style="text-align: right;">
+   ____                   __       __     __    _                           ___            
+  / __ \__  ______ ______/ /____  / /_   / /   (_)   _____  _________  ____/ (_)___  ____ _
+ / / / / / / / __ `/ ___/ __/ _ \/ __/  / /   / / | / / _ \/ ___/ __ \/ __  / / __ \/ __ `/
+/ /_/ / /_/ / /_/ / /  / /_/  __/ /_   / /___/ /| |/ /  __/ /__/ /_/ / /_/ / / / / / /_/ / 
+\___\_\__,_/\__,_/_/   \__/\___/\__/  /_____/_/ |___/\___/\___/\____/\__,_/_/_/ /_/\__, /  
+                                                                                  /____/   
+                             [v0.1] written 2021 by ryansupak          
 </div>
+
 
 </body>
 </html>

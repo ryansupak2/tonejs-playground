@@ -1,6 +1,6 @@
 body
 {
-	font-family:  monospace;
+	font-family: monospace;
 	color: #ffffff;
 	background-color: #000000;
 
@@ -8,69 +8,204 @@ body
 
 button 
 {
-	font-family: monospace;
-	color: #00FF00;
-	outline-color: #FFFFFF;
-	background-color: #000000;
+		font-family: monospace;
+		padding: 4px;
+
+		background-color: #000000;
+
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 1px;
+	 	border-radius: 1px;
+	 	cursor: pointer;
 }
 
-#Section_Globals
+#MainEngine_Container
 {
-	outline-color: #FFFFFF;
-	outline-style: solid;
-	outline-width: 1px;
-	padding: 12px;
-	margin: 12px;
-	white-space: pre;
+		display: flex;
+		align-items: center;
+
 }
 
-#Section_Status
+#SectionToggle_Container
 {
-	outline-color: #00FF00;
-	outline-style: solid;
-	outline-width: 1px;
-	padding: 4px;
-	margin: 4px;
-	white-space: default;
-}
-
-#Status_Label
-{
-
-	color: #00FF00;
+		
 }
 
 
-#Section_Title
+#SectionToggle_SubContainer
 {
-	font-family: monospace;
-	font-size: xx-large;
-	color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		vertical-align: middle;
+
+}
+
+#MainEngine_StatusLabel
+{
+		flex: 0 1 auto; 
+  	overflow: hidden;
+		font-size: large;
+		margin-right: 12px;
+}
+
+#MainEngine_Switch
+{
+		flex: 1;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff5050;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+input:checked + .slider {
+  background-color: #009911;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.TextGreen
+{
+	color: #04F404;
+}
+
+.TextRed
+{
+	color: #F40404;
+}
+
+.LineBlue
+{
+	border-color: #CCF4CC;
+	border-width: 1px;
 }
 
 #QuartetAsciiLogo
 {
+	font-weight: bold;
+	font-size: x-small;
+	color: #CCF4CC;
 	white-space: pre;
+	animation: LogoColorKF 7s infinite;
+
 }
 
-#Global_Status
+@keyframes LogoColorKF
 {
-	position: absolute;
-	top:  12px;
-	right: 12px;
-		outline-color: #FFFFFF;
-	outline-style: solid;
-	outline-width: 1px;
+	0%
+	{color: F4CCCC;}
+  33%
+  {color: CCF4CC;}
+ 	66%
+  {color: CCCCF4;}
+  100%
+  {color: F4CCCC;}  
+}
+
+@keyframes BorderColorKF
+{
+	0%
+	{border-color: F4CCCC;}
+  33%
+  {border-color: CCF4CC;}
+ 	66%
+  {border-color: CCCCF4;}
+  100%
+  {border-color: F4CCCC;}  
+}
+
+
+.MainPageSection
+{
+	background: #262224;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #F4F4F4;
 	padding: 12px;
 	margin: 12px;
+	font-size: large;
 }
 
-#circle
+.MainPageTopSection
 {
-  width: 16px;
-  height: 16px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  background: #00FF00;
+	background: #131112;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F4F4F4;
+	padding: 12px;
+	margin: 12px;
+	font-size: large;
+	animation: BorderColorKF 7s infinite;
 }
+
+.MainPageSuperSection
+{
+	background: #131112;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #F4F4F4;
+	padding: 12px;
+	margin: 12px;
+	font-size: large;
+	
+}
+
+
+
+
+
