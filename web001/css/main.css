@@ -3,209 +3,68 @@ body
 	font-family: monospace;
 	color: #ffffff;
 	background-color: #000000;
+	font-size: medium;
 
 }
 
-button 
+#Logo
 {
-		font-family: monospace;
-		padding: 4px;
-
-		background-color: #000000;
-
-		border-style: solid;
-		border-color: #FFFFFF;
-		border-width: 1px;
-	 	border-radius: 1px;
-	 	cursor: pointer;
-}
-
-#MainEngine_Container
-{
-		display: flex;
-		align-items: center;
-
-}
-
-#SectionToggle_Container
-{
-		
-}
-
-
-#SectionToggle_SubContainer
-{
-		display: flex;
-		align-items: center;
-		vertical-align: middle;
-
-}
-
-#MainEngine_StatusLabel
-{
-		flex: 0 1 auto; 
-  	overflow: hidden;
-		font-size: large;
-		margin-right: 12px;
-}
-
-#MainEngine_Switch
-{
-		flex: 1;
-}
-
-
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 42px;
-  height: 24px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff5050;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
-
-input:checked + .slider {
-  background-color: #009911;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 24px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.TextGreen
-{
-	color: #04F404;
-}
-
-.TextRed
-{
-	color: #F40404;
-}
-
-.LineBlue
-{
-	border-color: #CCF4CC;
-	border-width: 1px;
-}
-
-#QuartetAsciiLogo
-{
-	font-weight: bold;
-	font-size: x-small;
-	color: #CCF4CC;
+	color: #FFBF00;
 	white-space: pre;
-	animation: LogoColorKF 7s infinite;
+	font-size: small;
+	text-align: center;
 
 }
 
-@keyframes LogoColorKF
+#Credits
 {
-	0%
-	{color: F4CCCC;}
-  33%
-  {color: CCF4CC;}
- 	66%
-  {color: CCCCF4;}
-  100%
-  {color: F4CCCC;}  
+	color: #FFBF00;
+	font-size: small;
+	text-align: center;
 }
 
-@keyframes BorderColorKF
+.TopSection
 {
-	0%
-	{border-color: F4CCCC;}
-  33%
-  {border-color: CCF4CC;}
- 	66%
-  {border-color: CCCCF4;}
-  100%
-  {border-color: F4CCCC;}  
-}
-
-
-.MainPageSection
-{
-	background: #262224;
-	border-width: 1px;
-	border-style: dashed;
-	border-color: #F4F4F4;
-	padding: 12px;
-	margin: 12px;
-	font-size: large;
-}
-
-.MainPageTopSection
-{
-	background: #131112;
+	border-style: solid;
 	border-width: 2px;
-	border-style: solid;
-	border-color: #F4F4F4;
+	border-color: #FFFFFF;
 	padding: 12px;
 	margin: 12px;
-	font-size: large;
-	animation: BorderColorKF 7s infinite;
 }
 
-.MainPageSuperSection
+.Section
 {
-	background: #131112;
-	border-width: 1px;
 	border-style: solid;
-	border-color: #F4F4F4;
+	border-width: 1px;
+	border-color: #FFFFFF;
 	padding: 12px;
 	margin: 12px;
-	font-size: large;
-	
+	user-select: none;
 }
 
+.Section_Title
+{
+	color: #FFBF00;
+}
 
+.Section_Status
+{
+	color: #FFFFFF;
+}
 
+.Subsection
+{
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	padding: 12px;
+	margin: 12px;
+}
+
+.StatusItem
+{
+	display: inline-block;
+	user-select: none;
+}
 
 
