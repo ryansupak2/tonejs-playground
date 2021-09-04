@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.css" integrity="sha512-6sALqOPMrNSc+1p5xOhPwGIzs6kIlST+9oGWlI4Wwcbj1saaX9J3uzO3Vub016dmHV7hM+bMi/rfXLiF5DNIZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="css/main.css" /> 
 	</head>
-<body style="margin: 0px;">
+<body style="margin: 0px; margin-top: -8px;">
 <div id="Logo">
    ____                   __ _____ __ 
   / __ \__  ______ ______/ /|__  // /_
@@ -15,8 +15,12 @@
 L I V E . C O D I N G . E N V I R O N M E N T
 </div>
 
-<span style="font-size: xx-large; background-color:#440110; margin-left: 8px; padding: 4px;">voz/001</span>
-
+<div class="Subsection" style=" background-color: #440110">
+			<div class="Section_Status">
+				<span class="StatusItem" style="color: white; font-size: x-large;"><u><b>voz/001</b></u></span> <select style="cursor:pointer"><option value="on">channel active</option><option>channel NOT active</option></select></span> <span class="StatusItem" style="color:skyblue;">[-------+-------]</span>    <span style="float:right; margin-top:-0px;"><span class="StatusItem" style="color: green"><u>Status OK!!!</u></span> |  <select name="CompileOptions"><option value="CompileAll">compile all</option><option value="CompileAll">compile selected</option><option value="CompileAll">compile options...</option></select> <button>execute</button></span>
+			</div>
+		</div>
+		
 
 		<div id="textarea-container">
 				<textarea id="my-text-area"></textarea>
