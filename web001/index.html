@@ -4,67 +4,78 @@
 
 		<script src="js/tone/Tone.js" type="text/javascript"></script>
 		<script src="js/main.js" type="text/javascript"></script>
-
-		<link rel="stylesheet" href="css/main.css" /> 
+	   <link rel="stylesheet" href="css/main.css" /> 
 	</head>
-
-<body>
+<body style="margin: 0;">
 <div id="Logo">
    ____                   __ _____ __ 
   / __ \__  ______ ______/ /|__  // /_
  / / / / / / / __ `/ ___/ __//_ -/ __/
 / /_/ / /_/ / /_/ / /  / /____/ / /_  
 \___\_\__,_/\__,_/_/   \__/____/\__/  
-          live coding environment          
+          L I V E . C O D I N G . E N V I R O N M E N T          
 </div>
+
 <div class="TopSection">
 
-	<div class="Section">
-		<div class="Section_Status">
-			<span style="color: white;">globals</span> <b>|</b> <span style="color: green">status OK!</span> |</b> <span style="color: orangered;">Classes: 0014</span>
+<span class="StatusItem" style="background-color: green; cursor: pointer;"><i>[ Main Audio Engine ON. ]</i></span>
+<hr style="visibility: hidden;">
+	<div class="Section" style="background-color:#222222;">
+		<div class="Section_Status" style="align-items: center;">
+			<span style="color: white; display: inline;">globals</span> <b>|</b> <span style="color: green; display: inline;"><u>Status OK!!!</u></span> |</b> <span style="color: darkkhaki; display: inline;">Classes: 0014</span><span style="cursor: pointer; float: right; background-color:blueviolet; display: inline;">  </span> <div style="display: inline; float: right;"><button style="display: inline; font-size: small; cursor:pointer; font-family: monospace;">Open in Tab...</button></div>
 		</div>
 	</div>
 
-	<div class="Section">
 
-		<div class="Subsection">
+<div class="Section">
+
+		<div class="Subsection" style=" background-color: #440110">
 			<div class="Section_Status">
-				<span tabindex="1" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz 001</span> <b>|</b> <span class="StatusItem" style="color: green">status OK!</span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span>
+				<span tabindex="1" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz/001</span> <b>|</b> <span class="StatusItem" style="color: green"><u>Status OK!!!</u></span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span> <span onclick="window.open('voz.html', '_blank');" style="cursor: pointer; float: right; background-color:blueviolet;"> <i>[ New Tab ]</i> </span>
 			</div>
 		</div>
-		<div class="Subsection">
+		<div class="Subsection" style="background-color: #102201">
 			<div class="Section_Status">
-				<span tabindex="2" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz 002</span> <b>|</b> <span class="StatusItem" style="color: green">status OK!</span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span>
+				<span tabindex="2" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz/002</span> <b>|</b> <span class="StatusItem" style="color: green"><u>Status OK!!!</u></span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span> <span style="cursor: pointer; float: right; background-color:blueviolet;"> <i>[ New Tab ]</i> </span>
 	
 			</div>
 		</div>
-		<div class="Subsection">
+		<div class="Subsection" style="background-color: #011022">
 			<div class="Section_Status">
-					<span tabindex="3" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz 003</span> <b>|</b> <span class="StatusItem" style="color: green">status OK!</span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span>
+					<span tabindex="3" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz/003</span> <b>|</b> <span class="StatusItem" style="color: green"><u>Status OK!!!</u></span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span> <span style="cursor: pointer; float: right; background-color:blueviolet;"> <i>[ New Tab ]</i> </span>
 		</div>
 		</div>
-		<div class="Subsection">
+		<div class="Subsection" style="background-color: #353001;">
 			<div class="Section_Status">
-						<span tabindex="4" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz 004</span> <b>|</b> <span class="StatusItem" style="color: green">status OK!</span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span>
+						<span tabindex="4" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">voz/004</span> <b>|</b> <span class="StatusItem" style="color: green"><u>Status OK!!!</u></span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span> <span style="cursor: pointer; float: right; background-color:blueviolet;"> <i>[ New Tab ]</i> </span>
 	</div>
 		</div>
 
-		<div style="margin-top: 32px;" class="Subsection">
+
+		<div style="background-color: #300042" class="Section">
 			<div class="Section_Status">
-				<span tabindex="5" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">maestro</span> <b>|</b> <span class="StatusItem" style="color: green">status OK!</span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span>
+				<span tabindex="5" class="StatusItem" style="background-color: darkgreen; cursor: pointer;"><i>[ ON. ]</i></span> | </span><span class="StatusItem" style="color: white;">maestro</span> <b>|</b> <span class="StatusItem" style="color: green"><u>Status OK!!!</u></span> | <span class="StatusItem" style="color:rosybrown;">instances: 0032</span> | <span class="StatusItem" style="color:greenyellow;"> events: 0023/sec </span> |  <span class="StatusItem" style="color:skyblue;">[-------+-------]</span> <span style="cursor: pointer; float: right; background-color:blueviolet;"> <i>[ New Tab ]</i> </span>
 			</div>
 		</div>
-	</div>
 
-<br>
-<span tabindex="5" class="StatusItem" style="background-color: dimgrey; cursor: pointer;"><i>[ Initialize.. ]</i></span>
-<span tabindex="6" class="StatusItem" style="background-color: dimgrey; cursor: pointer;"><i>[ File Menu... ]</i></span>
+</div>
+
+
 
 </div>
 
 <div id="Credits">
-	quart3t live coding environment<br>
-	written late-summer 2021 by ryansupak
+version 0.1<br>created at end of summer 2021 by ryansupak<br>
+PLEASE WAIT FOR MALTAKREUZE !!!
+</div>
+
+
+
+<div id="Bottom" style="background-color: #000000; position:fixed; z-index: 99999; width: 100%; bottom:0; border-top: 1px #ffffff solid;">
+<details>
+	<summary>console</summary>
+	<textarea style="height: 400px;"></textarea>
+</details>
 </div>
 
 </body>

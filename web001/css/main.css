@@ -5,23 +5,38 @@ body
 	background-color: #000000;
 	font-size: medium;
 
+
 }
 
 #Logo
 {
+
 	color: #FFBF00;
 	white-space: pre;
-	font-size: small;
+	font-size: x-small;
 	text-align: center;
+	animation: color-change 30s infinite;
+}
+
+#Logo_Voz
+{
+	color: #FFBF00;
+	white-space: pre;
+	font-size: xx-small;
+	text-align: left;
+	animation: color-change 30s infinite;
 
 }
 
 #Credits
 {
 	color: #FFBF00;
-	font-size: small;
+	font-size: x-small;
 	text-align: center;
+	animation: color-change 30s infinite;
 }
+
+
 
 .TopSection
 {
@@ -30,6 +45,18 @@ body
 	border-color: #FFFFFF;
 	padding: 12px;
 	margin: 12px;
+
+}
+
+.TopSection_Voz
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFFFFF;
+	background-color: #440110;
+	padding: 12px;
+	margin: 12px;
+
 }
 
 .Section
@@ -37,6 +64,7 @@ body
 	border-style: solid;
 	border-width: 1px;
 	border-color: #FFFFFF;
+	background-color: #000000;
 	padding: 12px;
 	margin: 12px;
 	user-select: none;
@@ -67,4 +95,78 @@ body
 	user-select: none;
 }
 
+@keyframes color-change {
+  0% { color: #FFBF00; }
+  33% { color: #00FFBF; }
+  66% { color: #BF00FF; }
+  100% { color: #FFBF00; }
+}
 
+
+
+ /* Container just for size. */
+  .textarea-container {
+    width: 600px;
+    height: 400px;
+    resize: both;
+    overflow: auto;
+    padding: 2px;
+    background-color: #eee;
+
+  }
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+  border-right: 3px solid #440110;
+  background-color: #111111;
+  white-space: nowrap;
+}
+
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+
+
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #440110; }
+
+
+/* Change the overall fontsize of textarea code text. */
+  .CodeMirror {
+    /* font-family: Arial, monospace; */
+    font-size: 18px;
+ 
+    /* resize: both; ... Sadly resize won't work here. */
+    width: auto;
+    height: auto;  /* Stretch to fit container. */
+     margin-left: 8px;
+    margin-right: 8px;
+    background-color: #000000;
+    color: #FFFFFF;
+
+    border-color: #440110;
+    border-style: solid;
+    border-width: 8px;
+  }
+    
+  /* Container just for size. */
+  .textarea-container {
+    width: 600px;
+    height: auto;
+    resize: horizontal;
+    overflow: auto;
+    padding: 2px;
+    background-color: #000;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }

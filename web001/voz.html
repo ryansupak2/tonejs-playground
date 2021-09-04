@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>voz/001 | quart3t</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.js" integrity="sha512-hGVnilhYD74EGnPbzyvje74/Urjrg5LSNGx0ARG1Ucqyiaz+lFvtsXk/1jCwT9/giXP0qoXSlVDjxNxjLvmqAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.css" integrity="sha512-6sALqOPMrNSc+1p5xOhPwGIzs6kIlST+9oGWlI4Wwcbj1saaX9J3uzO3Vub016dmHV7hM+bMi/rfXLiF5DNIZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="css/main.css" /> 
+	</head>
+<body style="margin: 0px;">
+<div id="Logo">
+   ____                   __ _____ __ 
+  / __ \__  ______ ______/ /|__  // /_
+ / / / / / / / __ `/ ___/ __//_ -/ __/
+/ /_/ / /_/ / /_/ / /  / /____/ / /_  
+\___\_\__,_/\__,_/_/   \__/____/\__/  
+L I V E . C O D I N G . E N V I R O N M E N T
+</div>
+
+<span style="font-size: xx-large; background-color:#440110; margin-left: 8px; padding: 4px;">voz/001</span>
+
+
+		<div id="textarea-container">
+				<textarea id="my-text-area"></textarea>
+		</div>
+
+<hr style="visibility: hidden;">
+
+  <script>
+    // CodeMirror can replace a chosen text area with their highlighted version.
+    var myTextArea = document.getElementById('my-text-area');
+    var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
+        lineNumbers: true,
+        tabSize: 2,
+        lineWrapping: true
+      });    
+  </script>
+
+<div id="Bottom" style="background-color: #000000; position:fixed; z-index: 99999; width: 100%; bottom:0; border-top: 1px #ffffff solid;">
+<details>
+	<summary>console</summary>
+	<textarea style="height: 400px;"></textarea>
+</details>
+</div>
+
+</body>
+</html>
